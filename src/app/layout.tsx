@@ -22,7 +22,7 @@ const bebasNeue = Bebas_Neue({
 
 export const metadata: Metadata = {
   title: "Hoodies Rock | Viste tu música",
-  description: "Hoodies, camisetas y gorras para llevar tu música a todas partes.",
+  description: "Camisetas, buzos, gorras y mugs para llevar tu música a todas partes.",
 }
 
 export default function RootLayout({

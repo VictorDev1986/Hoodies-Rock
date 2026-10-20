@@ -1,7 +1,7 @@
-# Plan: BasicTechShop - Ecommerce de Productos de Computación
+# Plan: Hoodies Rock - Ecommerce de Ropa y Accesorios
 
 ## Configuración del Proyecto
-- **Nombre**: BasicTechShop
+- **Nombre**: Hoodies Rock
 
 ## Stack Tecnológico
 - **Frontend**: Next.js 16 (App Router)

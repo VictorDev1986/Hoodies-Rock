@@ -1,13 +1,13 @@
-# PRD: BasicTechShop
+# PRD: Hoodies Rock
 
 ## 1. Resumen Ejecutivo
 
-**BasicTechShop** es una plataforma e-commerce especializada en productos de computación (hardware, periféricos y componentes). El sistema permite a los usuarios navegar, filtrar y comprar productos, mientras que los administradores gestionan el inventario, usuarios y pedidos.
+**Hoodies Rock** es una plataforma e-commerce especializada en camisetas, buzos, gorras y mugs inspirados en la música. El sistema permite a los usuarios navegar, filtrar y comprar productos, mientras que los administradores gestionan el inventario, usuarios y pedidos.
 
 | Aspecto | Detalle |
 |---------|---------|
 | **Tipo** | E-commerce B2C |
-| **Mercado** | Productos de computación |
+| **Mercado** | Ropa y accesorios musicales |
 | **Plataforma** | Web (responsive) |
 | **Estado actual** | UI implementada con datos mock |
 

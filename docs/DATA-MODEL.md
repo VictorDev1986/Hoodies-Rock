@@ -1,4 +1,4 @@
-# Modelo de Datos - BasicTechShop
+# Modelo de Datos - Hoodies Rock
 
 ## Resumen de Requisitos
 

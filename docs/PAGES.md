@@ -1,4 +1,4 @@
-# Listado de Paginas - BasicTechShop
+# Listado de Paginas - Hoodies Rock
 
 ## Paginas Publicas (Shop)
 

@@ -1,10 +1,10 @@
 # Hoodies Rock
 
-E-commerce de productos de computación construido con Next.js 16, TypeScript y Tailwind CSS.
+E-commerce de ropa y accesorios musicales construido con Next.js 16, TypeScript y Tailwind CSS.
 
 ## Descripción
 
-Hoodies Rock es una tienda online de ropa y accesorios inspirados en la música. Incluye:
+Hoodies Rock es una tienda online de camisetas, buzos, gorras y mugs inspirados en la música. Incluye:
 
 - **Tienda pública**: Catálogo con filtros, carrito y checkout
 - **Panel de usuario**: Perfil, historial de pedidos y direcciones
