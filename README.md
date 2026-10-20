@@ -18,15 +18,15 @@ Hoodies Rock es una tienda online de camisetas, buzos, gorras y mugs inspirados 
 | TypeScript | Lenguaje |
 | Tailwind CSS v4 | Estilos |
 | shadcn/ui | Componentes UI |
-| Prisma | ORM |
-| PostgreSQL | Base de datos |
+| Prisma | ORM y migraciones |
+| Supabase | PostgreSQL y base de datos |
 | Zustand | Estado global |
 | NextAuth.js | Autenticación |
 
 ## Requisitos
 
 - Node.js 18+
-- PostgreSQL (para backend)
+- Proyecto de Supabase con PostgreSQL
 
 ## Instalación
 
@@ -39,14 +39,44 @@ cd Hoodies-Rock
 npm install
 
 # Configurar variables de entorno
-cp .env.example .env
-# Editar .env con tus credenciales
+# Crear .env.local y agregar las credenciales de Supabase:
+# DATABASE_URL: pooler de transacciones, puerto 6543
+# DIRECT_URL: pooler de sesiones para migraciones, puerto 5432
 
-# Ejecutar migraciones
-npx prisma migrate dev
+# Aplicar migraciones en Supabase
+npx prisma migrate deploy
 
 # Sembrar datos iniciales
-npx prisma db seed
+npm run db:seed
+```
+
+### Variables de entorno
+
+No subas `.env` ni `.env.local` al repositorio. Configura estas variables localmente
+y también en Vercel:
+
+```env
+DATABASE_URL="postgresql://postgres.[PROJECT-REF]:[PASSWORD]@[POOLER-HOST]:6543/postgres?pgbouncer=true"
+DIRECT_URL="postgresql://postgres.[PROJECT-REF]:[PASSWORD]@[POOLER-HOST]:5432/postgres"
+AUTH_SECRET="tu-clave-segura"
+NEXT_PUBLIC_APP_URL="http://localhost:3000"
+```
+
+`DATABASE_URL` se usa para las consultas de la aplicación y `DIRECT_URL` para
+las migraciones de Prisma. Si la contraseña contiene caracteres especiales,
+codifícalos para URL, por ejemplo `#` como `%23` y `@` como `%40`.
+
+### Flujo de base de datos
+
+```bash
+# Crear una migración durante el desarrollo
+npx prisma migrate dev --name nombre_del_cambio
+
+# Aplicar migraciones existentes en Supabase o producción
+npx prisma migrate deploy
+
+# Abrir Prisma Studio
+npx prisma studio
 ```
 
 ## Desarrollo
