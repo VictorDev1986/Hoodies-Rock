@@ -1,10 +1,10 @@
-# BasicTechShop
+# Hoodies Rock
 
 E-commerce de productos de computación construido con Next.js 16, TypeScript y Tailwind CSS.
 
 ## Descripción
 
-BasicTechShop es una tienda online especializada en hardware, periféricos y componentes de computación. Incluye:
+Hoodies Rock es una tienda online de ropa y accesorios inspirados en la música. Incluye:
 
 - **Tienda pública**: Catálogo con filtros, carrito y checkout
 - **Panel de usuario**: Perfil, historial de pedidos y direcciones
@@ -33,7 +33,7 @@ BasicTechShop es una tienda online especializada en hardware, periféricos y com
 ```bash
 # Clonar repositorio
 git clone <repo-url>
-cd ecommerce-basictech
+cd Hoodies-Rock
 
 # Instalar dependencias
 npm install
